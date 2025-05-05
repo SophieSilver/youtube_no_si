@@ -8,7 +8,7 @@ use teloxide::{
     sugar::request::RequestReplyExt,
     types::{MessageEntityKind, MessageId},
 };
-use tracing::{Level, debug, error, info, instrument, warn};
+use tracing::{debug, error, info, instrument, warn};
 use url::Url;
 
 use crate::{remove_si, utils::FullErrorDisplay, utils::downcast_panic};
