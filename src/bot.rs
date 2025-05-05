@@ -117,7 +117,7 @@ async fn send_message_retrying(
     last_err.map(Err).unwrap_or(Ok(()))
 }
 
-#[instrument(skip_all, level=Level::DEBUG, ret)]
+#[instrument(skip_all, err)]
 async fn remove_si(bot: BotRequester, message: Message) -> anyhow::Result<()> {
     let chat_id = message.chat_id().ok_or(anyhow!("failed to get chat id"))?;
 
