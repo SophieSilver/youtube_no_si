@@ -1,6 +1,6 @@
 use anyhow::anyhow;
 use futures::FutureExt;
-use std::{iter, panic::AssertUnwindSafe, time::Duration};
+use std::{iter, panic::AssertUnwindSafe};
 use teloxide::{
     RequestError,
     dispatching::{UpdateHandler, dialogue::GetChatId},
