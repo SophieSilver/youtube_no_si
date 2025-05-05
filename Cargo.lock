@@ -2301,6 +2301,7 @@ dependencies = [
  "anyhow",
  "dotenvy",
  "futures",
+ "log",
  "teloxide",
  "thiserror",
  "tokio",
