@@ -1,0 +1,19 @@
+[package]
+name = "youtube_no_si_redux"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+dotenvy = "0.15.7"
+futures = "0.3.31"
+teloxide = { version = "0.15.0", features = [
+    "rustls",
+    "ctrlc_handler",
+    "throttle",
+], default-features = false }
+thiserror = "2.0.12"
+tokio = { version = "1.44.2", features = ["full"] }
+tracing = { version = "0.1.41", features = ["release_max_level_info"] }
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+url = "2.5.4"
